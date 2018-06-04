@@ -7,9 +7,6 @@
 #include "BehaviorTree/BlackboardComponent.h"
 
 EBTNodeResult::Type UChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) {
-	// Protect against 
-
-
 	// Get the patrol route
 	auto ControlledPawn = OwnerComp.GetAIOwner()->GetPawn();
 	auto PatrolRoute = ControlledPawn->FindComponentByClass<UPatrolRoute>();
